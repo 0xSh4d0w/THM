@@ -5,13 +5,14 @@
 
 
 
-![[Screenshot From 2025-07-29 19-47-34.png]]
+<img width="815" height="429" alt="Screenshot_From_2025-07-29_19-47-34" src="https://github.com/user-attachments/assets/b223ff45-5d49-420a-8806-4bb0df831097" />
+
 
 take a good look at the hint , as per the room we are supposed to add the given IP address in the /etc/hosts path of our machine(vm or preferably the machine given in the room )
 The hints that we can assume from the given room are:
 	1) the company works on the topic space research and they write blogs about it(so they probably might have a separate blog site too  ) under a different subdomain name
 	2) "they are rebuilding their support" . now this may have 2 meanings either they have their support panel/page in their own website or it might be as a separate different website  under a different sub domain name
-## approach:
+## APPROACH:
 
 open your terminal and type the given command and add the given ip to the hosts folder like given below:
 
@@ -19,7 +20,9 @@ open your terminal and type the given command and add the given ip to the hosts 
 sudo nano /etc/hosts
 ```
 
-![[Screenshot From 2025-07-29 19-57-44.png]]
+
+<img width="815" height="429" alt="Screenshot_From_2025-07-29_19-57-44" src="https://github.com/user-attachments/assets/49c9270c-6599-49c3-816f-93531af041d5" />
+
 
 now lets ping the given ip to test if it's working 
 
@@ -113,7 +116,8 @@ Support                 [Status: 200, Size: 1522, Words: 367, Lines: 34, Duratio
 As we can see we get the subdomains such as `blog` and `support` i tried searching the files involved in their directories manually after adding their ip's too in the `/etc/hosts` directory
 upon surfing through the page source i found nothing for a period of time and i actually wasted huge amount of time in that ...so after a while i started checking its certificate as i found it to be suspicious while entering the website as it asked for safety permissions . To my surprise , I found something in the `support`  website ie it's DNS name kept bugging me 
 
- ![[Screenshot From 2025-07-29 22-10-32.png]]
+ <img width="925" height="633" alt="Screenshot_From_2025-07-29_22-10-32" src="https://github.com/user-attachments/assets/8a2fdfe6-0ea4-4f7b-af5c-d8872541c54c" />
+
 
 So , i went to check the given DNS name and to my surprise the flag was present in the url as soon as i pressed the enter button
 
@@ -121,4 +125,4 @@ So , i went to check the given DNS name and to my surprise the flag was present 
 http://flag{find_it_yourself}.s3-website-us-west-3.amazonaws.com/
 #this is not the actual flag folks
 ```
-
+Looking forward to write more XD
