@@ -8,9 +8,9 @@
 <img width="815" height="429" alt="Screenshot_From_2025-07-29_19-47-34" src="https://github.com/user-attachments/assets/b223ff45-5d49-420a-8806-4bb0df831097" />
 
 
-take a good look at the hint , as per the room we are supposed to add the given IP address in the /etc/hosts path of our machine(vm or preferably the machine given in the room )
-The hints that we can assume from the given room are:
-	1) the company works on the topic space research and they write blogs about it(so they probably might have a separate blog site too  ) under a different subdomain name
+take a good look at the hint , as per the room we are supposed to add the given IP address in the `/etc/hosts` path of our machine(vm or preferably the machine given in the room )
+The hints that we can assume from the given room are:<br> 
+	1) the company works on the topic space research and they write blogs about it(so they probably might have a separate blog site too  ) under a different subdomain name <br>
 	2) "they are rebuilding their support" . now this may have 2 meanings either they have their support panel/page in their own website or it might be as a separate different website  under a different sub domain name
 ## APPROACH:
 
@@ -72,13 +72,13 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 72.17 seconds
 ```
 
-from this we can tell that there are three open ports 
-ssh     -    port 22
-http     -   port 80
-https   - port 443
-now lets check all the open services and see what we have..since this is a web based room we probably wont be using SSH in here and lets go and check the remaining two ports .
+from this we can tell that there are three open ports <br> 
+ssh     -    port 22 <br> 
+http     -   port 80 <br> 
+https   - port 443 <br> 
+now lets check all the open services and see what we have..since this is a web based room we probably wont be using SSH in here and lets go and check the remaining two ports . <br> 
 now close the terminal and go to the website and search for  `https://futurevera.thm` . I tried manually inspecting the code and found nothing . Then , I tired fuzzing the web endpoints with ffuf(you can also use gobuster instead of this)
-to access it you can actually use the command 
+to access it you can actually use the command  <br> 
 i tried using http service it did'nt give me much useful information when compared to the https service
 ```
 └─$ ffuf -w /usr/share/wordlists/dirb/common.txt -u https://10.10.198.62/ -H "Host: FUZZ.futurevera.thm" -fl 92      
@@ -125,4 +125,4 @@ So , i went to check the given DNS name and to my surprise the flag was present 
 http://flag{find_it_yourself}.s3-website-us-west-3.amazonaws.com/
 #this is not the actual flag folks
 ```
-Looking forward to write more XD
+Looking forward to write more XD.
