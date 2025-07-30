@@ -1,5 +1,10 @@
 ## CHALLENGE NAME : TakeOver
 ## ROOM LEVEL ; TYPE :  EASY ; WEB 
+## INFO 
+
+this is a web based challenge that focuses purely focuses on Subdomain enumeration only.
+
+
 ## GIVEN:
 
 
