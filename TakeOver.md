@@ -2,7 +2,7 @@
 ## ROOM LEVEL ; TYPE :  EASY ; WEB 
 ## INFO 
 
-this is a web based challenge that focuses purely focuses on Subdomain enumeration only.
+this is a web based challenge that purely focuses on Subdomain enumeration only.
 
 
 ## GIVEN:
@@ -127,7 +127,7 @@ upon surfing through the page source i found nothing for a period of time and i 
 So , i went to check the given DNS name and to my surprise the flag was present in the url as soon as i pressed the enter button
 
 ```
-http://flag{find_it_yourself}.s3-website-us-west-3.amazonaws.com/
+http://flag{find_it_by_yourself}.s3-website-us-west-3.amazonaws.com/
 #this is not the actual flag folks
 ```
 Looking forward to write more XD.
