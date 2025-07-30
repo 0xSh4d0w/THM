@@ -16,7 +16,7 @@ this is a web based challenge that focuses purely focuses on Subdomain enumerati
 take a good look at the hint , as per the room we are supposed to add the given IP address in the `/etc/hosts` path of our machine(vm or preferably the machine given in the room )
 The hints that we can assume from the given room are:<br> 
 	1) the company works on the topic space research and they write blogs about it(so they probably might have a separate blog site too  ) under a different subdomain name <br>
-	2) "they are rebuilding their support" . now this may have 2 meanings either they have their support panel/page in their own website or it might be as a separate different website  under a different sub domain name
+	2) "they are rebuilding their support" . now this may have 2 meanings either they have their support panel/page in their own website or it might be as a separate different website  under a different subdomain name
 ## APPROACH:
 
 open your terminal and type the given command and add the given ip to the hosts folder like given below:
